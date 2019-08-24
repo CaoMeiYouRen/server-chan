@@ -1,18 +1,30 @@
 {
-    "name": "server-chan",
-    "version": "0.0.0-dev.20190824",
+    "name": "node-server-chan",
+    "version": "1.0.0",
     "description": "Server酱的node.js端模块。为了使用方便专门抽离出一个模块。使用教程见https://sc.ftqq.com/3.version",
+    "keywords": [
+        "server-chan",
+        "serverchan"
+    ],
     "main": "dist/index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "tsc",
-        "install": "npm i --production",
-        "deploy": "rimraf dist && npm run build && npm publish"
+        "build": "rimraf dist && tsc",
+        "deploy": "npm run build && npm publish",
+        "deploy:dev": "npm run build && npm publish --tag dev"
     },
     "author": "CaoMeiYouRen",
     "license": "MIT",
     "engines": {
         "node": ">=8"
+    },
+    "homepage": "https://github.com/CaoMeiYouRen/server-chan",
+    "bugs": {
+        "url": "https://github.com/CaoMeiYouRen/server-chan/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/CaoMeiYouRen/server-chan.git"
     },
     "devDependencies": {
         "@types/got": "^9.6.7",

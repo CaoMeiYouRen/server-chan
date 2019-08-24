@@ -29,7 +29,6 @@
     "include": [
         "src/*.ts",
         "src/**/*.ts",
-        "test/*.ts",
         "node_modules/@types",
     ],
     "exclude": [
