@@ -1,0 +1,30 @@
+{
+    "name": "server-chan",
+    "version": "0.0.0-dev.20190824",
+    "description": "Server酱的node.js端模块。为了使用方便专门抽离出一个模块。使用教程见https://sc.ftqq.com/3.version",
+    "main": "dist/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsc",
+        "install": "npm i --production",
+        "deploy": "rimraf dist && npm run build && npm publish"
+    },
+    "author": "CaoMeiYouRen",
+    "license": "MIT",
+    "engines": {
+        "node": ">=8"
+    },
+    "devDependencies": {
+        "@types/got": "^9.6.7",
+        "@typescript-eslint/eslint-plugin": "^1.13.0",
+        "@typescript-eslint/parser": "^1.13.0",
+        "eslint": "^5.16.0",
+        "eslint-plugin-typescript": "^0.14.0",
+        "rimraf": "^3.0.0",
+        "typescript": "^3.5.3",
+        "typescript-eslint-parser": "^22.0.0"
+    },
+    "dependencies": {
+        "got": "^9.6.0"
+    }
+}
