@@ -7,9 +7,7 @@ module.exports = {
         mocha: true
     },
     extends: [
-        // 'airbnb-base'
         "eslint:recommended",
-        //'eslint-config-alloy'
     ],
     globals: {// 处理全局变量
         Atomics: 'readonly',
@@ -29,8 +27,6 @@ module.exports = {
         'no-fallthrough': 2,
         'complexity': 0,
         'max-nested-callbacks': 0,
-        // 类和接口的命名必须遵守帕斯卡命名法，比如 PersianCat
-        // 'typescript/class-name-casing': 'error',
         indent: [// 强制使用一致的缩进
             'error',
             4, {
@@ -52,9 +48,6 @@ module.exports = {
         'prefer-arrow-callback': [// 要求回调函数使用箭头函数
             'error'
         ],
-        // "no-param-reassign": [
-        //     "error", { "props": false }//禁止对 function 的参数进行重新赋值
-        // ],
         'no-shadow': 'error', // 禁止变量声明与外层作用域的变量同名
         'no-unused-vars': 0, // 禁止出现未使用过的变量
         'no-console': 0, // 禁止console
